@@ -1,12 +1,13 @@
 import streamlit as st
 
-# set page config must come first
+# 🚨 this must be first, before anything else using Streamlit
 st.set_page_config(page_title="SHL GenAI Assessment Recommender", layout="wide")
 
 import pandas as pd
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
+
 
 # =============================
 # Load model and FAISS index
