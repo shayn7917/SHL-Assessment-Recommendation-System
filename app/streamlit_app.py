@@ -1,8 +1,4 @@
 import streamlit as st
-
-# 🚨 this must be first, before anything else using Streamlit
-st.set_page_config(page_title="SHL GenAI Assessment Recommender", layout="wide")
-
 import pandas as pd
 import numpy as np
 import faiss
@@ -34,7 +30,7 @@ def recommend(query, top_k=5):
 # =============================
 # Streamlit UI
 # =============================
-st.set_page_config(page_title="SHL GenAI Assessment Recommender", layout="wide")
+
 
 st.title("SHL GenAI Assessment Recommender")
 st.markdown(
